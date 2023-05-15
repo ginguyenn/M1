@@ -1,43 +1,37 @@
 package de.htwberlin.webtech.m1.web.api;
 
-public class Person {
+public class PersonManipulationRequest {
 
-    private long id;
     private String firstName;
     private String lastName;
     private boolean vaccinated;
 
-    //Constructor create
-    public Person(long id, String firstName, String lastName, boolean vaccinated) {
-        this.id = id;
+    public PersonManipulationRequest(String firstName, String lastName, boolean vaccinated) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.vaccinated = vaccinated;
     }
 
-    //getter&setter create
-
-    public long getId() {
-        return id;
-    }
-    public void setId(long id) {
-        this.id = id;
-    }
     public String getFirstName() {
         return firstName;
     }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
     public String getLastName() {
         return lastName;
     }
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
     public boolean isVaccinated() {
         return vaccinated;
     }
+
     public void setVaccinated(boolean vaccinated) {
         this.vaccinated = vaccinated;
     }

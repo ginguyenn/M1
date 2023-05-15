@@ -19,15 +19,11 @@ public class PersonEntity {
     @Column(name = "test")
     private String testColumn;
 
-    public PersonEntity(Long id, String firstName, String lastName, Boolean vaccinated) {
+    public PersonEntity(String firstName, String lastName, Boolean vaccinated) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.vaccinated = vaccinated;
-    }
-
-    public PersonEntity(Long id) {
-        this.id = id;
     }
 
 
@@ -54,5 +50,13 @@ public class PersonEntity {
 
     public void setVaccinated(Boolean vaccinated) {
         this.vaccinated = vaccinated;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
