@@ -12,7 +12,7 @@ public class Person {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.vaccinated = vaccinated;
+
     }
 
     //getter&setter create

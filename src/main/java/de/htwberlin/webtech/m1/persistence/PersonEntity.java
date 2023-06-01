@@ -26,6 +26,9 @@ public class PersonEntity {
         this.vaccinated = vaccinated;
     }
 
+    public PersonEntity() {
+
+    }
 
 
     public String getFirstName() {
